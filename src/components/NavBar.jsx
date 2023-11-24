@@ -11,34 +11,24 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className="me-3">
+            <Nav.Link href="#home" className="me-3 text-white fw-medium">
               Home
             </Nav.Link>
-            <NavDropdown
-              title="Dropdown"
-              className="me-3"
-              id="basic-nav-dropdown"
-            >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#link" className="me-3">
+            <Nav.Link href="#link" className="me-3 text-white fw-medium">
               About Us
             </Nav.Link>
-            <Nav.Link href="#link" className="me-3">
+            <Nav.Link href="#link" className="me-3 text-white fw-medium">
               Destinations
             </Nav.Link>
-            <Nav.Link href="#link" className="me-3">
+            <Nav.Link href="#link" className="me-3 text-white fw-medium">
               Travel Deals
             </Nav.Link>
-            <Nav.Link href="#link" className="me-3">
+            <Nav.Link href="#link" className="me-3 text-white fw-medium">
               Services
             </Nav.Link>
           </Nav>
+          <Button className="btn-primary">Book a travel</Button>
         </Navbar.Collapse>
-        <Button className="btn-primary">Book a travel</Button>
       </Container>
     </Navbar>
   );
