@@ -34,11 +34,12 @@ function Navbar() {
                     {item.label}
                   </a>
                 ))}
-                <button className="sm:hidden md:hidden lg:flex bg-blue-500 rounded-xl px-4 py-1">
-                  Book a Travel
+                <button className="sm:hidden xs:hidden md:hidden lg:flex bg-blue-500 rounded-xl px-4">
+                  <span>Book a Travel</span>
                 </button>
               </div>
             </div>
+
             {/* secondary */}
             <div className="flex gap-6 items-center">
               {/* Mobile navigation toggle */}
@@ -52,8 +53,8 @@ function Navbar() {
         </div>
         {/* mobile navigation */}
         <div
-          className={`z-40 w-full  bg-gray-100 overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 ${
-            !toggleMenu ? "h-0" : "h-full"
+          className={`z-40 w-full bg-gray-100 overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 ${
+            !toggleMenu ? "h-0" : "h-full "
           }`}
         >
           <div className="px-8 py-6">
@@ -63,7 +64,7 @@ function Navbar() {
                   {item.label}
                 </a>
               ))}
-              <button className="bg-blue-500 rounded-xl px-4 py-1">
+              <button className="bg-blue-500 rounded-xl py-1">
                 Book a Travel
               </button>
             </div>
