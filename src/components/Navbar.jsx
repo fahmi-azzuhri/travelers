@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <div className="app">
       <nav>
-        <div className="mx-auto bg-transparent">
+        <div className="mx-auto bg-transparent shadow-header">
           <div className="flex mx-auto justify-between w-5/6 ">
             {/* Primary menu and logo */}
             <div className="flex items-center gap-16 my-6">
@@ -24,18 +24,22 @@ function Navbar() {
                   href="/"
                   className="flex gap-1 font-bold text-gray-700 items-center "
                 >
-                  <span>TRAVELERS</span>
+                  <span className="text-white font-bold">TRAVELERS</span>
                 </a>
               </div>
               {/* primary */}
               <div className="hidden lg:flex gap-8 ">
                 {navbarList.map((item, index) => (
-                  <a key={index} href={item.link}>
+                  <a
+                    className="text-white hover:text-gray-900"
+                    key={index}
+                    href={item.link}
+                  >
                     {item.label}
                   </a>
                 ))}
-                <button className="sm:hidden xs:hidden md:hidden lg:flex bg-blue-500 rounded-xl px-4">
-                  <span>Book a Travel</span>
+                <button className="sm:hidden xs:hidden md:hidden lg:flex bg-blue-500 rounded-xl px-4 ml-64">
+                  <span className="text-white font-bold">Book a Travel</span>
                 </button>
               </div>
             </div>
@@ -58,7 +62,7 @@ function Navbar() {
           }`}
         >
           <div className="px-8 py-6">
-            <div className="flex flex-col gap-8 font-bold tracking-wider text-center">
+            <div className="flex flex-col gap-8 tracking-wider text-center">
               {navbarList.map((item, index) => (
                 <a key={index} href={item.link}>
                   {item.label}
