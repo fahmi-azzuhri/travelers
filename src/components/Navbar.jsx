@@ -1,3 +1,4 @@
+import { Button } from "@material-tailwind/react";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 function Navbar() {
@@ -28,18 +29,18 @@ function Navbar() {
                 </a>
               </div>
               {/* primary */}
-              <div className="hidden lg:flex gap-8 ">
+              <div className="hidden lg:flex gap-8">
                 {navbarList.map((item, index) => (
                   <a key={index} href={item.link}>
-                    <span className="text-white hover:text-gray-900 align-middle">
+                    <p className="text-white hover:text-gray-900">
                       {item.label}
-                    </span>
+                    </p>
                   </a>
                 ))}
-                <button className="sm:hidden xs:hidden md:hidden lg:flex bg-blue-500 rounded-xl px-4 py-1 text-white ml-64 hover:bg-blue-600">
-                  Book a travel
-                </button>
               </div>
+              <Button className="align-middle md:hidden lg:inline xl:inline ml-64 bg-blue-500 hover:bg-blue-800">
+                Book a travel
+              </Button>
             </div>
 
             {/* secondary */}
