@@ -30,16 +30,14 @@ function Navbar() {
               {/* primary */}
               <div className="hidden lg:flex gap-8 ">
                 {navbarList.map((item, index) => (
-                  <a
-                    className="text-white hover:text-gray-900"
-                    key={index}
-                    href={item.link}
-                  >
-                    {item.label}
+                  <a key={index} href={item.link}>
+                    <span className="text-white hover:text-gray-900 align-middle">
+                      {item.label}
+                    </span>
                   </a>
                 ))}
-                <button className="sm:hidden xs:hidden md:hidden lg:flex bg-blue-500 rounded-xl px-4 ml-64">
-                  <span className="text-white font-bold">Book a Travel</span>
+                <button className="sm:hidden xs:hidden md:hidden lg:flex bg-blue-500 rounded-xl px-4 py-1 text-white ml-64 hover:bg-blue-600">
+                  Book a travel
                 </button>
               </div>
             </div>
