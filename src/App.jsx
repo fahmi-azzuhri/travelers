@@ -1,3 +1,4 @@
+import Destinations from "./components/Destinations";
 import Header from "./components/Header";
 import { SimpleNavbar } from "./components/SimpleNavbar";
 import Sponsor from "./components/Sponsor";
@@ -8,6 +9,7 @@ function App() {
       <SimpleNavbar />
       <Header />
       <Sponsor />
+      <Destinations />
     </>
   );
 }
