@@ -1,24 +1,25 @@
 import React from "react";
 import { CardDestinations } from "./CardDestinations";
 import { FaHotel, FaBed } from "react-icons/fa";
+import dest from "../assets/img/dest.png";
+import dest1 from "../assets/img/dest1.png";
+import dest2 from "../assets/img/dest2.png";
+import dest3 from "../assets/img/dest3.png";
 const Destinations = () => {
   const destinations = [
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      imageUrl: dest,
+      location: "Swiss",
+      rating: 4.8,
+    },
+    {
+      imageUrl: dest1,
       location: "Indonesia",
       rating: 5.0,
     },
     {
-      imageUrl:
-        "https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-      location: "Indonesia",
-      rating: 5.0,
-    },
-    {
-      imageUrl:
-        "https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-      location: "Indonesia",
+      imageUrl: dest2,
+      location: "Malaysia",
       rating: 5.0,
     },
   ];
@@ -62,10 +63,7 @@ const Destinations = () => {
             </button>
           </div>
         </div>
-        <img
-          className="w-full h-[380px] border rounded-xl"
-          src="https://loremflickr.com/400/380?cat"
-        />
+        <img className="w-full h-[380px] border rounded-xl" src={dest3} />
       </div>
     </div>
   );

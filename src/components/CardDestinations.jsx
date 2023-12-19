@@ -12,7 +12,8 @@ export function CardDestinations({ imageUrl, location, rating }) {
         floated={false}
         shadow={false}
         color="transparent"
-        className={`absolute inset-0 m-0 h-full w-full rounded-none bg-[url('${imageUrl}')] bg-cover bg-center`}
+        style={{ backgroundImage: `url(${imageUrl})` }}
+        className={`absolute inset-0 m-0 h-full w-full rounded-none bg-cover bg-center`}
       >
         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
       </CardHeader>
