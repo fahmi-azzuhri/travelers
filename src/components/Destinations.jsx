@@ -34,7 +34,7 @@ const Destinations = () => {
           <CardDestinations key={index} {...destination} />
         ))}
       </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 mx-auto">
+      <div className="grid lg:grid-cols-2 grid-cols-1 mx-auto mb-16">
         <div className="flex flex-col">
           <h1 className="text-xl font-bold mb-5">
             Escape to paradise: discover unforgettable luxury at our exquisite
