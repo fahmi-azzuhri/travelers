@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar } from "@material-tailwind/react";
+import { Avatar, Typography } from "@material-tailwind/react";
 import avatar1 from "../assets/img/avatar1.png";
 import avatar2 from "../assets/img/avatar2.png";
 import avatar3 from "../assets/img/avatar3.png";
@@ -20,10 +20,37 @@ const Review = () => {
           stumbled upon a gem in the travel industry. ”
         </p>
         <div className="flex flex-row mb-6">{stars}</div>
-        <div className="flex flex-row mt-3 justify-around">
-          <Avatar className="w-32 h-32" src={avatar1} alt="avatar" />
-          <Avatar className="w-32 h-32" src={avatar2} alt="avatar" />
-          <Avatar className="w-32 h-32" src={avatar3} alt="avatar" />
+        <div className="flex flex-row  justify-around">
+          <figure>
+            <Avatar className="w-32 h-32" src={avatar1} alt="avatar" />
+            <Typography
+              as="caption"
+              variant="small"
+              className="mt-2 text-center font-bold"
+            >
+              Jean Arch
+            </Typography>
+          </figure>
+          <figure>
+            <Avatar className="w-32 h-32" src={avatar2} alt="avatar" />
+            <Typography
+              as="caption"
+              variant="small"
+              className="mt-2 text-center font-bold"
+            >
+              Ruhi Hassan
+            </Typography>
+          </figure>
+          <figure>
+            <Avatar className="w-32 h-32" src={avatar3} alt="avatar" />
+            <Typography
+              as="caption"
+              variant="small"
+              className="mt-2 text-center font-bold"
+            >
+              Dimitri Mean
+            </Typography>
+          </figure>
         </div>
       </div>
     </div>
