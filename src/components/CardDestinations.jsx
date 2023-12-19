@@ -6,7 +6,7 @@ export function CardDestinations({ imageUrl, location, rating }) {
   return (
     <Card
       shadow={false}
-      className="mt-5 relative grid h-[30rem] w-[20rem] max-w-[28rem] items-end justify-center overflow-hidden"
+      className="mt-5 relative grid h-[30rem] w-[25rem] max-w-[28rem] items-end justify-center overflow-hidden lg:mx-3 sm:mx-auto"
     >
       <CardHeader
         floated={false}
