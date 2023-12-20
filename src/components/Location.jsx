@@ -5,9 +5,9 @@ function Location() {
   const [selectedOption, setSelectedOption] = useState("");
 
   const options = [
-    { value: "option1", label: "Option 1" },
-    { value: "option2", label: "Option 2" },
-    { value: "option3", label: "Option 3" },
+    { value: "Location1", label: "Location 1" },
+    { value: "Location2", label: "Location 2" },
+    { value: "Location3", label: "Location 3" },
   ];
 
   const handleChange = (e) => {
