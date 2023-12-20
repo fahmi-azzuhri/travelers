@@ -32,7 +32,7 @@ const currentYear = new Date().getFullYear();
 
 export function Footers() {
   return (
-    <footer className="relative w-full mt-16">
+    <footer className="relative w-full py-7 mt-16 bg-gray-100">
       <div className="mx-auto w-full max-w-7xl">
         <div className="flex lg:flex-row flex-col gap-4 lg:justify-evenly md:text-center">
           {LINKS.map(({ title, items }) => (
