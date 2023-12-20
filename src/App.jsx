@@ -1,4 +1,5 @@
 import Destinations from "./components/Destinations";
+import { Footers } from "./components/Footers";
 import Header from "./components/Header";
 import Review from "./components/Review";
 import { SimpleNavbar } from "./components/SimpleNavbar";
@@ -12,6 +13,7 @@ function App() {
       <Sponsor />
       <Destinations />
       <Review />
+      <Footers />
     </>
   );
 }
