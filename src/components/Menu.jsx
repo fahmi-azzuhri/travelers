@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 
 export function Menu() {
   return (
-    <div className="bg-white w-full p-5 shadow-md rounded-[24px] flex flex-col md:flex-row">
+    <div className="bg-white w-full p-5 shadow-md rounded-[24px] flex flex-col md:flex-row justify-between">
       <Location />
       <PickerDate />
       <SearchBar />
